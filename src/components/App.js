@@ -11,18 +11,15 @@ const App = () => {
     <Router>
       <div id="main">
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/topics">
-            <Topics />
-          </Route>
-          <Route exact path="/topics/components">
-            <ComponentsTopic />
-          </Route>
-          <Route exact path="/topics/rendering">
-            <RenderingTopic />
-          </Route>
+
+          <Route exact path="/" > <Home /> </Route>
+
+          <Route exact path="/topics" > <Topics /> </Route>
+
+          <Route exact path="/topics/components" > {<ComponentsTopic />} </Route>
+
+          <Route exact path="/topics/rendering" >{<RenderingTopic /> }</Route>
+
         </Switch>
       </div>
     </Router>
